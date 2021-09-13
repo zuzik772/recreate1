@@ -4,19 +4,43 @@
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: space-between;
 
 
 }
 
-header * {
+/* header * {
     background-color: aqua;
+} */
+
+header div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 25px;
+    padding: 0.4rem 0.8rem;
+    background-color: #e6e3e3;
+
+}
+
+header div i {
+    color: #757575;
+}
+
+header div input {
+    width: 200px;
+    margin-left: 6px;
+    border: none;
+    background-color: #e6e3e3;
+    color: #757575;
 }
 
 header h1 {
     text-transform: uppercase;
+    text-align: center;
 }
 
 header h1 span {
@@ -26,6 +50,7 @@ header h1 span {
 nav {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 nav * {
