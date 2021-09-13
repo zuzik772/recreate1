@@ -85,7 +85,7 @@ nav button:last-child {
 
 button {
     font-family: var(--headingFont);
-    padding: 8px 15px;
+    padding: 6px 15px;
     border-radius: 25px;
     border: none;
 }
@@ -199,5 +199,10 @@ article ul li span {
 }
 
 article button {
-    margin-right: 0.6 rem;
+    margin-right: 0.6rem;
+}
+
+article button:last-child {
+    background-color: rgb(179, 38, 38);
+    color: #fff;
 }
