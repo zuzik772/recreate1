@@ -15,7 +15,8 @@ h4,
 h5,
 h6,
 em,
-p {
+p,
+li {
     font-family: var(--headingFont);
 }
 
@@ -156,4 +157,47 @@ article section+div {
     height: 1px;
     background-color: #dadada;
     margin-top: 1.4rem;
+}
+
+article section:last-child div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article section:last-child div:last-child {
+    justify-content: start;
+}
+
+article h3 {
+    font-size: 1rem;
+}
+
+article section div span {
+    background-color: #e6e3e3;
+    color: #757575;
+    padding: 4px 8px;
+    border-radius: 25px;
+    font-family: var(--headingFont);
+    font-size: 0.8rem;
+}
+
+article ul {
+    margin-top: -0.5rem;
+}
+
+article ul li {
+    list-style: none;
+    text-align: start;
+    line-height: 1.5rem;
+    font-weight: 200;
+}
+
+article ul li::first-letter,
+article ul li span {
+    font-weight: 400;
+}
+
+article button {
+    margin-right: 0.6 rem;
 }
