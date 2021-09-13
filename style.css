@@ -127,7 +127,7 @@ article .vegan {
     margin-bottom: 2rem;
 }
 
-article section div:nth-child(2) {
+.divider {
     border-left: 1px solid #dadada;
     border-right: 1px solid #dadada;
     padding: 0 3rem;
@@ -198,11 +198,25 @@ article ul li span {
     font-weight: 400;
 }
 
-article button {
-    margin-right: 0.6rem;
-}
-
-article button:last-child {
+article button:last-child:not(aside+button) {
     background-color: rgb(179, 38, 38);
     color: #fff;
+    margin-left: 0.6rem;
+}
+
+.btn-directions {
+    border-radius: 25px;
+    background-color: rgb(239, 239, 239);
+    padding-left: 1rem;
+}
+
+.btn-directions button {
+    padding-left: 5px;
+}
+
+aside * {
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    margin: 2px 0;
 }
