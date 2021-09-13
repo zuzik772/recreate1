@@ -159,7 +159,8 @@ article section+div {
     margin-top: 1.4rem;
 }
 
-article section:last-child div {
+/* article section:last-child div */
+.ingredients {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -198,6 +199,10 @@ article ul li span {
     font-weight: 400;
 }
 
+.btns {
+    display: flex;
+}
+
 article button:last-child:not(aside+button) {
     background-color: rgb(179, 38, 38);
     color: #fff;
@@ -205,6 +210,8 @@ article button:last-child:not(aside+button) {
 }
 
 .btn-directions {
+    display: flex;
+    align-items: center;
     border-radius: 25px;
     background-color: rgb(239, 239, 239);
     padding-left: 1rem;
