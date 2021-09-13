@@ -126,6 +126,12 @@ article .vegan {
     margin-bottom: 2rem;
 }
 
+article section div:nth-child(2) {
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    padding: 0 3rem;
+}
+
 article section:first-of-type {
     display: flex;
     /* align-items: center; */
@@ -144,4 +150,10 @@ section div img {
 
 section div p:last-child:not(img+p) {
     font-weight: 100;
+}
+
+article section+div {
+    height: 1px;
+    background-color: #dadada;
+    margin-top: 1.4rem;
 }
