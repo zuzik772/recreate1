@@ -20,7 +20,7 @@ header div:first-child {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    border-radius: 25px;
+    border-radius: 6px;
     padding: 0.4rem 0.8rem;
     background-color: #e6e3e3;
 
@@ -54,14 +54,26 @@ nav {
 }
 
 nav * {
-    margin-right: 1.8rem;
+    margin-right: 1rem;
 }
 
 nav button:first-child {
     background-color: red;
+    color: #fff;
+}
+
+nav button:last-child {
+    background-color: #e6e3e3;
 }
 
 button {
     padding: 5px 10px;
     border-radius: 25px;
+    border: none;
+}
+
+nav i {
+    border-radius: 50px;
+    padding: 0 5px;
+    border: 1px solid #a7a7a7;
 }
