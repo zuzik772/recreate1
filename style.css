@@ -13,8 +13,14 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+em,
+p {
     font-family: var(--headingFont);
+}
+
+p {
+    margin: 0;
 }
 
 header {
@@ -117,6 +123,25 @@ article .vegan {
     font-family: var(--headingFont);
     color: #a7a7a7;
     font-size: 0.8rem;
-    margin-top: 0;
+    margin-bottom: 2rem;
+}
 
+article section:first-of-type {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+article section div em {
+    font-size: 2rem;
+    font-family: var(--headingFont);
+    font-style: normal;
+}
+
+section div img {
+    width: 3.5rem;
+}
+
+section div p:last-child:not(img+p) {
+    font-weight: 100;
 }
