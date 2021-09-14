@@ -29,6 +29,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -198,7 +202,6 @@ article ul {
 }
 
 article ul li {
-    list-style: none;
     text-align: start;
     line-height: 1.5rem;
     font-weight: 200;
@@ -244,15 +247,41 @@ main h3 {
     text-align: center;
 }
 
-main div {
+main div:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    grid-column: 1/-1;
 }
 
 main div a {
     text-transform: uppercase;
     color: #a7a7a7;
     font-size: 0.8rem;
+}
+
+.grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    background-color: rgb(241, 241, 241);
+
+}
+
+
+.grid-auto-fit section h4 {
+    border: 2px solid rgb(206, 206, 206);
+    background-color: black;
+    opacity: 0.4;
+    color: white;
+    font-weight: 200;
+    padding: 1rem;
+
+}
+
+.recipe-details {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
 }
