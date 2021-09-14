@@ -269,14 +269,26 @@ main div a {
 
 }
 
+.container-overlay {
+    position: relative;
+}
+
+.container-overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 
 .grid-auto-fit section h4 {
-    border: 2px solid rgb(206, 206, 206);
-    background-color: black;
-    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
-    font-weight: 200;
     padding: 1rem;
+    font-weight: 100;
+    margin: 0;
 
 }
 
@@ -284,4 +296,14 @@ main div a {
     display: flex;
     justify-content: space-between;
     border: 2px solid black;
+}
+
+.recipe-details ul {
+    margin: 0;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+.recipe-details ul li:last-child {
+    font-weight: 100;
 }
