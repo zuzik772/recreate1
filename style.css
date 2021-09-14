@@ -23,6 +23,13 @@ a {
     font-family: var(--primaryFont);
 }
 
+a:hover {
+    background-color: whitesmoke;
+    border: 1px solid #dadada;
+    padding: 3px;
+    border-radius: 10px;
+}
+
 h4,
 li {
     font-family: var(--secondaryFont);
@@ -286,6 +293,12 @@ main div a {
     text-transform: uppercase;
     color: #a7a7a7;
     font-size: 0.8rem;
+}
+
+main section:hover {
+    background-color: rgb(241, 241, 241);
+    border: 2px solid #dadada;
+    padding: 10px;
 }
 
 .grid-auto-fit {
