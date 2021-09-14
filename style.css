@@ -307,7 +307,7 @@ main div a {
 }
 
 .recipe-details ul li:last-child {
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .am-special {
@@ -316,4 +316,45 @@ main div a {
     text-align: center;
     border-radius: 5px;
     border: 1px solid rgb(196, 194, 194);
+}
+
+/* footer */
+footer {
+    background-color: rgb(241, 241, 241);
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    margin-top: 5rem;
+}
+
+footer div:first-child {
+    grid-column: 1/3;
+    margin: 0 auto;
+}
+
+footer div img {
+    margin-top: 2rem;
+}
+
+footer ul li:first-child {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+footer ul {
+    padding: 2rem 0;
+}
+
+footer li {
+    line-height: 2rem;
+}
+
+footer div:last-child {
+    grid-column: 2/6;
+    height: 1px;
+    background-color: #dadada;
 }
