@@ -265,8 +265,6 @@ main div a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    background-color: rgb(241, 241, 241);
-
 }
 
 .container-overlay {
@@ -295,7 +293,6 @@ main div a {
 .recipe-details {
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
 }
 
 .recipe-details ul {
@@ -304,6 +301,18 @@ main div a {
     font-size: 0.8rem;
 }
 
+.recipe-details ul:last-child {
+    text-align: end;
+}
+
 .recipe-details ul li:last-child {
     font-weight: 100;
+}
+
+.am-special {
+    background-color: rgb(241, 241, 241);
+    padding: 2px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 194, 194);
 }
