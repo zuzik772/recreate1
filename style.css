@@ -16,12 +16,17 @@ h5,
 h6,
 em,
 p,
-li {
+li,
+a {
     font-family: var(--headingFont);
 }
 
 p {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -113,6 +118,11 @@ article {
 article * {
     grid-column: 2/3;
     text-align: center;
+}
+
+article img {
+    display: block;
+    margin: 0 auto;
 }
 
 article h2 {
@@ -226,4 +236,23 @@ aside * {
     height: 2px;
     background-color: black;
     margin: 2px 0;
+}
+
+/* main */
+
+main h3 {
+    text-align: center;
+}
+
+main div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main div a {
+    text-transform: uppercase;
+    color: #a7a7a7;
+    font-size: 0.8rem;
 }
