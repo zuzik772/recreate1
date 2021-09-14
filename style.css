@@ -173,7 +173,6 @@ article .vegan {
 
 article section:first-of-type {
     display: flex;
-    /* align-items: center; */
     justify-content: space-around;
 }
 
@@ -408,4 +407,60 @@ footer p:last-child {
     grid-column: 1/-1;
     font-weight: 400;
     padding-bottom: 1.4rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    footer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer div:first-child {
+        grid-column: 1/6;
+        margin-top: 2rem;
+    }
+
+    footer .line {
+        grid-column: 1/6;
+    }
+
+    footer ul {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    h2 {
+        font-size: 16px;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    img {
+        width: 70%;
+    }
+
+    .grid-auto-fit {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    footer {
+        display: block;
+        margin: 16px;
+    }
+
+    footer ul {
+        padding: 10px;
+    }
+
+    footer li {
+        line-height: 1rem;
+    }
 }
