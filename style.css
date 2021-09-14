@@ -1,5 +1,7 @@
 :root {
-    --headingFont: 'Roboto',
+    --primaryFont: 'Roboto',
+        sans-serif;
+    --secondaryFont: 'Source Sans Pro',
         sans-serif;
 }
 
@@ -8,17 +10,22 @@
     padding: 0;
 }
 
+
+
 h1,
 h2,
 h3,
-h4,
 h5,
 h6,
 em,
 p,
-li,
 a {
-    font-family: var(--headingFont);
+    font-family: var(--primaryFont);
+}
+
+h4,
+li {
+    font-family: var(--secondaryFont);
 }
 
 p {
@@ -93,7 +100,7 @@ nav button:last-child {
 }
 
 button {
-    font-family: var(--headingFont);
+    font-family: var(--primaryFont);
     padding: 6px 15px;
     border-radius: 25px;
     border: none;
@@ -135,7 +142,7 @@ article h2 {
 
 article .vegan {
     text-transform: uppercase;
-    font-family: var(--headingFont);
+    font-family: var(--primaryFont);
     color: #a7a7a7;
     font-size: 0.8rem;
     margin-bottom: 2rem;
@@ -155,7 +162,7 @@ article section:first-of-type {
 
 article section div em {
     font-size: 2rem;
-    font-family: var(--headingFont);
+    font-family: var(--primaryFont);
     font-style: normal;
 }
 
@@ -193,7 +200,7 @@ article section div span {
     color: #757575;
     padding: 4px 8px;
     border-radius: 25px;
-    font-family: var(--headingFont);
+    font-family: var(--primaryFont);
     font-size: 0.8rem;
 }
 
@@ -204,7 +211,7 @@ article ul {
 article ul li {
     text-align: start;
     line-height: 1.5rem;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 article ul li::first-letter,
@@ -242,6 +249,10 @@ aside * {
 }
 
 /* main */
+main {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
 
 main h3 {
     text-align: center;
@@ -286,7 +297,7 @@ main div a {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 1rem;
-    font-weight: 100;
+    font-weight: 400;
     margin: 0;
 
 }
@@ -306,8 +317,12 @@ main div a {
     text-align: end;
 }
 
+.recipe-details ul li:first-child {
+    font-weight: 600;
+}
+
 .recipe-details ul li:last-child {
-    font-weight: 300;
+    color: #757575;
 }
 
 .am-special {
@@ -342,7 +357,7 @@ footer div img {
 
 footer ul li:first-child {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 footer ul {
@@ -351,10 +366,18 @@ footer ul {
 
 footer li {
     line-height: 2rem;
+    font-weight: 400;
 }
 
-footer div:last-child {
+footer .line {
     grid-column: 2/6;
     height: 1px;
     background-color: #dadada;
+}
+
+footer p:last-child {
+    text-align: center;
+    grid-column: 1/-1;
+    font-weight: 400;
+    padding-bottom: 1.4rem;
 }
