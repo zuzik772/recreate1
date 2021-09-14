@@ -95,6 +95,10 @@ nav button:first-child {
     color: #fff;
 }
 
+nav button:first-child:hover {
+    background-color: rgb(243, 88, 88);
+}
+
 nav button:last-child {
     background-color: #a7a7a7;
 }
@@ -104,6 +108,12 @@ button {
     padding: 6px 15px;
     border-radius: 25px;
     border: none;
+}
+
+button:hover:not(.btn-directions button),
+.btn-directions:hover:not(.btn-directions button) {
+    transform: scale(1.1);
+    box-shadow: 1px 2px #888888;
 }
 
 nav i {
@@ -227,6 +237,11 @@ article button:last-child:not(aside+button) {
     background-color: rgb(179, 38, 38);
     color: #fff;
     margin-left: 0.6rem;
+}
+
+article button:last-child:not(aside+button):hover {
+    color: rgb(255, 50, 50);
+    background-color: rgb(238, 231, 231);
 }
 
 .btn-directions {
